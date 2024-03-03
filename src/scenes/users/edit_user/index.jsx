@@ -65,36 +65,36 @@ function Edit_Profile() {
 
       <div role="edit_button" className='flex items-center justify-center'>
         <Button
-          style={{
-            background: editp ? "grey" : colors.yellow,
-            borderRadius: "20px",
-            fontSize: "9px",
-            fontWeight: "900",
-            color: "black",
-            opacity: editp ? 0.5 : 1,
-            padding: "10px 20px 10px 20px",
-            marginRight: "4px",
-            '&:hover': {
-              background: colors.yellowHover,
-            }
-          }}
+            style={{
+              background: editp ? "rgba(217, 217, 217, 1)" : colors.yellow,
+              borderRadius: "20px",
+              fontSize: "10px",
+              fontWeight: "bold",
+              color: "black",
+              padding: "8px 20px 8px 20px",
+              opacity: editp ? 0.4 : 1,
+              marginRight: "10px",
+              "&:hover": {
+                background: colors.yellowHover,
+              },
+            }}
           onClick={() => { setEditp(!editp) }}
         >
           Edit Profile
         </Button>
         <Button
-          style={{
-            background: editp ? colors.yellow : "grey",
-            borderRadius: "20px",
-            fontSize: "9px",
-            fontWeight: "900",
-            color: "black",
-            padding: "10px 20px 10px 20px",
-            opacity: editp ? 1 : 0.5,
-            '&:hover': {
-              background: colors.yellowHover,
-            }
-          }}
+            style={{
+              background: editp ? colors.yellow : "rgba(217, 217, 217, 1",
+              borderRadius: "20px",
+              fontSize: "10px",
+              fontWeight: "bold",
+              color: "black",
+              padding: "8px 20px 8px 20px",
+              opacity: editp ? 1 : 0.4,
+              "&:hover": {
+                background: colors.yellowHover,
+              },
+            }}
           onClick={() => { setEditp(!editp) }}
         >
           Edit Address
