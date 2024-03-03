@@ -1,0 +1,109 @@
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  direction: ltr;
+}
+
+.content {
+  width: 100%;
+}
+
+.ps-menu-button:hover {
+  background-color: rgba(255, 226, 10, 0.3) !important;
+  color: rgba(255, 226, 10, 1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the thumb color to transparent */
+  display: none; /* Hide the thumb */
+}
+
+.ps-sidebar-root {
+  scrollbar-width: 10px; /* Set the width of the scrollbar for non-WebKit browsers */
+  scrollbar-color: rgba(255, 226, 10, 0.3) transparent; /* Set the color of the thumb and track for non-WebKit browsers */
+  -webkit-scrollbar-width: thin; /* Set the width of the scrollbar for WebKit browsers */
+  -webkit-scrollbar-color: rgba(255, 226, 10, 0.3) transparent; /* Set the color of the thumb and track for WebKit browsers */
+}
+
+.ps-sidebar-root {
+  overflow-x: visible !important;
+  overflow-y: auto;
+
+}
+
+.container {
+  padding: 1rem 3.5rem;
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(63, 27, 91, 0.1);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.dashboard-icon {
+  width: auto;
+  height: 25px;
+}
+
+main {
+  width: calc(100vw - 17rem) !important;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+body {
+  background-color: #fcf9ff !important;
+}
+
+.classic_btn{
+  width: 100px !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+  padding: 5px 10px !important;
+  color:white !important;
+  font-size: 12px !important;
+  align-items: center;
+  gap: 2px;
+
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .classic_btn {
+    width: 40px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+  }
+}
+
