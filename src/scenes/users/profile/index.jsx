@@ -131,6 +131,7 @@ const CoursesTable = () => {
               style={{
                 background: colors.purple,
               }}
+              onClick={()=>{navigate("/user/profile")}}
             >
             
               Back

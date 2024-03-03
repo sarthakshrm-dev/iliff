@@ -64,6 +64,7 @@ const NewCourse = () => {
             onClick={() => navigate("/courses")}
             variant="contained"
             color="secondary"
+            className='classic_btn'
           >
             Back
           </Button>
@@ -198,7 +199,9 @@ const NewCourse = () => {
         color: "white",
         fontSize: "10px",
         fontWeight: "600",
-      }}> Next</Button></div>
+      }}
+      onClick={()=>{navigate("/courses/new2")}}
+      > Next</Button></div>
     </div>
   );
 };

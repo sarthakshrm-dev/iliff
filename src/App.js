@@ -9,6 +9,7 @@ import UserProfile from "./scenes/users/profile";
 import CoursesTable from "./scenes/courses/index.jsx";
 import NewCourse from "./scenes/courses/new/index.jsx";
 import Edit from "./scenes/users/edit_user/index.jsx"
+import NewCourse2 from "./scenes/courses/new2/index.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/user/profile" element={<UserProfile />} />
             <Route path="/user/profile/edit" element={<Edit />} />
             <Route path="/courses/new" element={<NewCourse />} />
+            <Route path="/courses/new2" element={<NewCourse2 />} />
           </Routes>
         </main>
       </div>

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { tokens } from "../../../theme";
+import { useNavigate } from "react-router-dom";
 import { Grid, TextField, Button, Typography, Container, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 function Edit_Profile() {
+    
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: 'Jane Doe',
     dateOfBirth: '2022-05-20',
@@ -54,6 +57,7 @@ function Edit_Profile() {
           style={{
             background: colors.purple,
           }}
+          onClick={()=>{navigate("/user/profile")}}
         >
           Back
         </Button>
