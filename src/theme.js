@@ -17,16 +17,19 @@ export const themeSettings = () => {
     return {
         palette: {
             primary: {
-                main: colors.olive
+                main: colors.olive,
+                grey:colors.bgGrey
             },
             secondary: {
                 main: colors.purple
+
             },
             neutral: {
                 main: colors.yellow
             },
             background: {
-                main: colors.red
+                main: colors.red,
+                
             }
         },
         typography: {

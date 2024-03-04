@@ -36,7 +36,7 @@ function Login() {
     <div className='flex flex-col justify-center items-center bg-white rounded-xl shadow-sm w-full max-w-md'>
       <Icon className='w-40' />
       <img src={LetLogin} alt="Let Login" className='w-40' />
-      <Box sx={{ minWidth: 300, paddingBottom: "30px" }}>
+      <Box sx={{ minWidth: 300, width:"100%", padding:"30px"}}>
         {error && <Typography color="error" sx={{ marginBottom: 2 }}>{error}</Typography>}
         <form onSubmit={handleSubmit}>
           <Box sx={{ marginBottom: 2 }}>
@@ -80,7 +80,7 @@ function Login() {
               }}
             />
           </Box>
-          <Button type="submit" variant="contained" color="primary" fullWidth>
+          <Button type="submit" variant="contained" color="primary" fullWidth className='h-12 rounded-3xl'>
             Login
           </Button>
         </form>

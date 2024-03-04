@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { tokens } from "../../../theme";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { AlignHorizontalCenter, AlignHorizontalLeft, AlignHorizontalRight } from "@mui/icons-material";
+import Ques from "../../../components/course_question"
 
 const NewCourse2 = () => {
   const colors = tokens();
@@ -143,7 +144,7 @@ const NewCourse2 = () => {
                 Questions
               </Button>
             </div>
-            <div role="edit field" className="flex flex-col gap-3 mt-3">
+         {question?(<Ques number="1" question="lorem ques1 answer it or fuck off" />):(   <div role="edit field" className="flex flex-col gap-3 mt-3">
             <Typography variant="subtitle1" fontWeight="bold">
         Session Title
       </Typography>
@@ -159,7 +160,7 @@ const NewCourse2 = () => {
       />
 
    
-            </div>
+            </div>)}
           </div>
          
         </div>

@@ -11,11 +11,15 @@ import NewCourse from "./scenes/courses/new/index.jsx";
 import Edit from "./scenes/users/edit_user/index.jsx"
 import NewCourse2 from "./scenes/courses/new2/index.jsx";
 import Login from "./scenes/login/index.jsx";
+import  Announcement from "./scenes/announcement/index.jsx";
+import New_Announcement from "./scenes/announcement/new/index.jsx";
+import Event from "./scenes/event/index.jsx";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      
       <div className="app">
         <AppSidebar />
         <main className="content">
@@ -29,6 +33,9 @@ function App() {
             <Route path="/courses/new" element={<NewCourse />} />
             <Route path="/courses/new2" element={<NewCourse2 />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/announcement" element={<Announcement />} />
+            <Route path="/announcement/new" element={<New_Announcement />} />
+            <Route path="/events" element={<Event />} />
           </Routes>
         </main>
       </div>
